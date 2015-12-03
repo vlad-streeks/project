@@ -1,0 +1,30 @@
+/* font-family: "AaarghRegular"; */
+@font-face {
+    font-family: "AaarghRegular";
+    src: url("../fonts/AaarghRegular/AaarghRegular.eot");
+    src: url("../fonts/AaarghRegular/AaarghRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/AaarghRegular/AaarghRegular.woff") format("woff"),
+    url("../fonts/AaarghRegular/AaarghRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "AaarghBold"; */
+@font-face {
+    font-family: "AaarghBold";
+    src: url("../fonts/AaarghBold/AaarghBold.eot");
+    src: url("../fonts/AaarghBold/AaarghBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/AaarghBold/AaarghBold.woff") format("woff"),
+    url("../fonts/AaarghBold/AaarghBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "AleksandraCRegular"; */
+@font-face {
+    font-family: "AleksandraCRegular";
+    src: url("../fonts/AleksandraCRegular/AleksandraCRegular.eot");
+    src: url("../fonts/AleksandraCRegular/AleksandraCRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/AleksandraCRegular/AleksandraCRegular.woff") format("woff"),
+    url("../fonts/AleksandraCRegular/AleksandraCRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
