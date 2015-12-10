@@ -12,12 +12,11 @@ body{
 .main_header{
 	display: block;
 	width: 100%;
-	opacity: 0.7;
 	padding: 25px;
     position: fixed;
     top: 0;
     z-index: 10;
-    background-color: #172330;
+    background-color: rgba(23, 35, 48, .7);
 }
 .logo{
     float: left;
@@ -38,7 +37,7 @@ nav li{
 nav li a{
 	text-decoration: none;
 	color: #fff;
-	font-size: 18px;
+	font-size: 16px;
 	font-family: Arial Regular;
 	font-weight: 600;
 	display: block;
@@ -54,13 +53,14 @@ nav li:hover a{
 }
 .slides h3{
 	color: #000;
-	font-size: 1em;
+	font-size: .7em;
 	font-family: "AaarghBold";
 }
 .slides p{
 	color: #030303;
-	font-size: 0.7em;
+	font-size: 0.5em;
 	font-weight: bold;
+	letter-spacing: 2px;
 }
 section{
 	padding: 50px 0px;
@@ -69,7 +69,7 @@ section{
 }
 .prod p, .about p, .thisis p, .uslugi p{
 	color: #000;
-	font-size: 26px;
+	font-size: 16px;
 	font-family: "AleksandraCRegular";
 }
 .prod img, .prod p{
@@ -78,6 +78,7 @@ section{
 
 .about p, .thisis p, .uslugi p{
 	padding: 50px 0px;
+	letter-spacing: 1px;
 }
 .thisis p{
 	color: #fff;
@@ -95,7 +96,7 @@ section{
 	background: none repeat scroll 0 0 #000000;
     color: #FFFFFF;
     display: inline-block;
-    font-size: 36px;
+    font-size: 18px;
     height: 60px;
     font-weight: normal;
     padding: 10px 20px;
@@ -142,7 +143,7 @@ section:nth-child(2n+1){
 	outline: none;
 	background-color: #E3E3E3;
 	font-family: "AleksandraCRegular";
-	padding: 0 20px;
+	padding: 20px;
 }
 .contacts textarea{
 	height: 150px;

@@ -8,8 +8,11 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/slider.css">
 	<link rel="stylesheet" href="css/hover.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="parallax.js"></script>
+	<script type="text/javascript" src="parallax.js"></script>
+	<script type="text/javascript" src="wow.js"></script>
+	<script type="text/javascript" src="common.js"></script>
 </head>
 <body>
 	<header>
@@ -64,42 +67,42 @@
             </ul>
         </div>
         <section class="prod">
-        	<header><h3>АВТОРИЗОВАННЫЙ СЕРВИС:</h3></header>
-        	<div class="col6">
+        	<header class="wow flip animated"><h3>АВТОРИЗОВАННЫЙ СЕРВИС:</h3></header>
+        	<div class="col6 wow slideInLeft">
         		<img src="img/bosch.png" height="200" width="323" alt="" class="hvr-bounce-in">
         		<p>BOSCH DIESEL SERVICE</p>
 
         	</div>
-        	<div class="col6 fadeInLeft">
+        	<div class="col6 wow slideInRight">
         		<img src="img/delphi.png" height="200" width="323" alt=""class="hvr-bounce-in">
         		<p>DELPHI DIESEL SERVICE</p>
         	</div>
         </section>
-        <section class="about" id="about">
-        	<header><h3>О ПРЕДПРИЯТИИ:</h3></header>
+        <section class="about wow slideInUp animated" id="about">
+        	<header class="wow lightSpeedIn animated" data-wow-delay="0.5s"><h3>О ПРЕДПРИЯТИИ:</h3></header>
         	<img src="img/photo1.jpg" height="422" width="563">
         	<p>В текущий момент ЧП ДИЗЕЛЬ является сертифицированным сервисом BOSCH и DELPHI - крупнейших в мире компаний по производству комплектующих для автомобилей и другой техники. На высоком техническом уровне предприятие также выполняет ремонт дизельных двигателей и топливных систем: DIESEL KIKI, LUCAS, MOTORPAL, ZEXEL, STANADAIN, CATERPILLAR, DOOWAN, YANMAR, ЯЗТА, DETROIT, CUMMINS и других заводов.</p>
         </section>
         <section class="thisis" class="parallax-window" data-parallax="scroll" data-image-src="img/1.jpg">
-        	<header><h3>DIESEL SERVICE ЭТО:</h3></header>
-        	<p>Предприятие включает в себя 25 специалистов со средним и высшим спец. образованием, которые работают по 10 техническим специальностям.</p>
-        	<p>Мощная производственная база, большой опыт и высокий профессионализм сотрудников позволили изучить технологии диагностики и ремонта практически всей топливной аппаратуры, которая выпускается в мире</p>
+        	<header class="wow slideInLeft animated"><h3>DIESEL SERVICE ЭТО:</h3></header>
+        	<p class="wow zoomInLeft"  data-wow-delay="0.4s">Предприятие включает в себя 25 специалистов со средним и высшим спец. образованием, которые работают по 10 техническим специальностям.</p>
+        	<p class="wow zoomInLeft"  data-wow-delay="0.8s">Мощная производственная база, большой опыт и высокий профессионализм сотрудников позволили изучить технологии диагностики и ремонта практически всей топливной аппаратуры, которая выпускается в мире</p>
         </section>
         <section class="uslugi" id="uslugi">
-        	<header><h3>УСЛУГИ:</h3></header>
+        	<header class="wow slideInRight"><h3>УСЛУГИ:</h3></header>
         		<input id="tab1" type="radio" name="tabs" checked>
-				<label for="tab1"><img src="img/ico1.png" height="50" width="50" alt=""></label>
+				<label for="tab1" class="wow fadeIn" data-wow-delay="0.5s"><img src="img/ico1.png" height="50" width="50" alt=""></label>
 	
 				<input id="tab2" type="radio" name="tabs">
-				<label for="tab2"><img src="img/ico2.png" height="50" width="50" alt=""></label>
+				<label for="tab2" class="wow fadeIn" data-wow-delay="1s"><img src="img/ico2.png" height="50" width="50" alt=""></label>
 	
 				<input id="tab3" type="radio" name="tabs">
-				<label for="tab3"><img src="img/ico3.png" height="50" width="50" alt=""></label>
+				<label for="tab3" class="wow fadeIn" data-wow-delay="1.5s"><img src="img/ico3.png" height="50" width="50" alt=""></label>
 	
 				<input id="tab4" type="radio" name="tabs">
-				<label for="tab4"><img src="img/ico4.png" height="50" width="50" alt=""></label>
+				<label for="tab4" class="wow fadeIn" data-wow-delay="2s"><img src="img/ico4.png" height="50" width="50" alt=""></label>
 	
-		 		 <div class="content_tab">  
+		 		 <div class="content_tab wow slideInLeft">  
 			 		<div id="content1">
 						<p>В текущий момент ЧП ДИЗЕЛЬ является сертифицированным сервисом BOSCH и DELPHI - крупнейших в мире компаний по производству комплектующих для автомобилей и другой техники. На высоком техническом уровне предприятие также выполняет ремонт дизельных двигателей и топливных систем: DIESEL KIKI, LUCAS, MOTORPAL, ZEXEL, STANADAIN, CATERPILLAR, DOOWAN, YANMAR, ЯЗТА, DETROIT, CUMMINS и других заводов.
 						</p>
@@ -128,18 +131,18 @@
         	<div class="col6">
         		<h4>Оставить заявку</h4>
         		<form action="">
-        			<p><input id="name" name="name" type="text" placeholder="Ваше имя" autofocus></p>
+        			<p class="wow fadeInUpBig" data-wow-delay="0.3s"><input id="name" name="name" type="text" placeholder="Ваше имя"></p>
 					
 
 					
-					<p><input id="name" name ="telephone" type="tel" placeholder="Номер телефона" requared size="50" pattern="([0-9]{1}(-[0-9]{3})(-[0-9]{3}))"></p>
+					<p class="wow fadeInUpBig" data-wow-delay="0.6s"><input id="name" name ="telephone" type="tel" placeholder="Номер телефона" requared size="50" pattern="([0-9]{1}(-[0-9]{3})(-[0-9]{3}))"></p>
 					
 
 					
-					<p><input id="email" name="email" type="email" placeholder="Ваш email " recuered size="50"></p>
+					<p class="wow fadeInUpBig" data-wow-delay="0.9s"><input id="email" name="email" type="email" placeholder="Ваш email " recuered size="50"></p>
 		
 
-					<p><textarea name="comment" recuered placeholder="Текст сообщения"></textarea></p>
+					<p class="wow fadeInUpBig" data-wow-delay="1.2s"><textarea name="comment" recuered placeholder="Текст сообщения"></textarea></p>
         		</form>
         	</div>
         	<div class="col6"></div>
