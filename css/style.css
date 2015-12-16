@@ -9,6 +9,41 @@ width: 100%;
 body{
 	color: #d9d9d9;
 }
+/*
+input:focus:required:invalid,
+textarea:focus:required:invalid {
+	border: red 3px solid;
+	
+}
+input:required:valid,
+textarea:required:valid {
+	border: green 3px solid;
+	
+}
+*/
+*::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.5s ease;}
+*::-moz-placeholder                {opacity: 1; transition: opacity 0.5s ease;}
+*:-moz-placeholder                 {opacity: 1; transition: opacity 0.5s ease;}
+*:-ms-input-placeholder            {opacity: 1; transition: opacity 0.5s ease;}
+*:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.5s ease;}
+*:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.5s ease;}
+*:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.5s ease;}
+*:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.5s ease;}
+
+
+
+.contacts>input:focus:required:invalid,
+.contacts>textarea:focus:required:invalid {
+	outline: 1px solid red;
+	box-shadow: 0px 0px 6px rgba(255,0,0,0.6);
+}
+.contacts> input:required:valid,
+.contacts >textarea:required:valid {
+	outline: 1px solid green;
+	box-shadow: 0px 0px 6px rgba(0,255,0,0.8);
+}
+
+
 .main_header{
 	display: block;
 	width: 100%;
@@ -22,6 +57,7 @@ body{
     float: left;
     overflow: hidden;
 }
+
 nav{
     float: right;
     position: relative;
@@ -51,6 +87,12 @@ nav li:hover a{
 .active{
 	color: #FF4000;
 }
+.burger{
+	display: none;
+}
+.burger_active{
+
+}
 .slides h3{
 	color: #000;
 	font-size: .7em;
@@ -71,6 +113,7 @@ section{
 	color: #000;
 	font-size: 16px;
 	font-family: "AleksandraCRegular";
+	line-height: 20px;
 }
 .prod img, .prod p{
 	cursor: pointer;
@@ -84,13 +127,13 @@ section{
 	color: #fff;
 }
 .col6{
-	padding: 50px 0px;
+	padding: 50px 50px;
 	width: 50%; 
 	float: left;
 	text-align: center;
 
 }
-.prod h3, .about h3, .thisis h3, .contacts h3, .uslugi h3{
+.prod h3, .about h3, .thisis h3, .contacts h3, .uslugi h3, .price h3, .gallary h3{
 	font-family: "AaarghBold";
 	text-align: center;
 	background: none repeat scroll 0 0 #000000;
@@ -132,9 +175,7 @@ section:nth-child(2n+1){
     padding: 10px 20px;
     font-family: "AaarghBold";
 }
-.contacts form{
-	padding: 0px 50px;
-}
+
 .contacts input, .contacts textarea{
 	margin: 5px;
 	width: 100%;
@@ -148,6 +189,31 @@ section:nth-child(2n+1){
 .contacts textarea{
 	height: 150px;
 	padding: 20px;
+}
+.contacts input[type=submit]{
+font-family: "AaarghBold";
+	text-align: center;
+	background: none repeat scroll 0 0 #000000;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 18px;
+    height: 60px;
+    font-weight: normal;
+    padding: 10px 20px;
+    position: relative;
+    text-transform: uppercase;
+    min-width: 10%;
+    line-height: 42px;
+    cursor: pointer;
+    transform-style: flat;
+    -webkit-transform-style: flat;
+    -moz-transformtransform-style: flat;
+    -ms-transform-style: flat;
+    transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -webkit-transform: rotate(360deg) scale(1.003) skew(-14deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
 }
 /*tabs*/
 .content_tab {
@@ -195,3 +261,167 @@ section:nth-child(2n+1){
 		#tab4:checked ~ .content_tab #content4 {
 		  display: block;
 		}
+
+.price img {
+    display:block;
+    width: 100%;
+    padding: 50px 0;
+}
+/*.col3{
+	width: 33%;
+	float: left;
+
+}
+.col3 img{
+	width: 100%;
+	padding: 50px 25px;
+}*/
+.gallary{
+	position: relative;
+}
+
+.next_button, .prev_button{
+	background-color: rgba(255, 255, 255, 0.5);
+	font-size: 46px;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	padding: 0 25px;
+	cursor: pointer;
+	border-radius: 35px;
+}
+.next_button{
+	right: 20px;
+}
+.prev_button{
+	left: 20px;
+}
+.slider_container{
+	padding: 50px 0px;
+}
+/*.navigation {
+   list-style: none;
+   background: #111;
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 0;
+}
+.site-wrap {
+   min-width: 100%;
+   min-height: 100%;
+   background-color: #fff;
+   position: relative;
+   top: 0;
+   bottom: 100%;
+   left: 0;
+   z-index: 1;
+}
+}
+.nav-trigger {
+   display: block;
+   width: 0;
+   height: 0;
+}
+label[for="nav-trigger"] {
+   position: fixed;
+   top: 15px;
+   left: 15px;
+   z-index: 2;
+}
+label[for="nav-trigger"] {
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+   background-image: url("data:image/svg+xml;utf8,");
+   background-size: contain;
+}
+.nav-trigger:checked + label {
+   left: 215px;
+}
+.nav-trigger:checked ~ .site-wrap {
+   left: 200px;
+   box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+.nav-trigger + label, .site-wrap {
+   transition: left 0.2s;
+}
+body {
+   overflow-x: hidden;
+}*/
+.addres{
+	text-align: left;
+	
+}
+.addres p{
+	
+	font-family: arial, tahoma;
+	font-size: 16px;
+	color: #000;
+	font-style: italic;
+	display: block;
+	margin-bottom: 10px;
+}
+.addres mark{
+	color: #FF4000;
+	font-size: 18px;
+	background: inherit;
+}
+.addres h4{
+	margin-bottom: 50px;
+}
+
+.price{
+	padding:50px 50px;
+}
+caption{
+	text-align: center;
+}
+#pris,tbody{
+	width:100%;
+	margin:0 auto;
+	border: 1px solid black;
+	padding: 0;
+	border-spacing:0;
+	border-collapse: collapse;
+	color: #000;
+	margin-top: 50px;
+}
+
+thead{
+	text-align: center;
+}
+td{
+	border-left:1px solid black;
+}
+thead>tr>td{
+	border: 1px solid black;
+	text-align: center;
+}
+.left_col{
+	width:80%;
+	vertical-align: middle;
+}
+.right_col{
+	width:20%;
+	text-align: center;
+}
+.price h2{
+	margin: 7pt 0 7pt 0;
+	font: bold 110% serif;
+}
+.price h5{
+	margin-bottom: 7pt;
+	font:105% serif;
+}
+.price p{
+margin-bottom: 5pt;	
+}
+.price td:not(.right_col){
+	padding-left: 25px;
+}

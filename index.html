@@ -9,10 +9,24 @@
 	<link rel="stylesheet" href="css/slider.css">
 	<link rel="stylesheet" href="css/hover.css">
 	<link rel="stylesheet" href="css/animate.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/media.css">
+
+	<link rel="stylesheet" href="fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="owl-carousel/owl.carousel.css" />
+
+	<script src="jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="parallax.js"></script>
 	<script type="text/javascript" src="wow.js"></script>
 	<script type="text/javascript" src="common.js"></script>
+
+	<script src="fancybox/jquery.fancybox.pack.js"></script>
+	<script src="owl-carousel/owl.carousel.js"></script>
+
+
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 <body>
 	<header>
@@ -21,13 +35,22 @@
 				<strong><a href="#"><img src="img/Diesel.png" height="45" width="325" alt="DIESEL LOGO"></a>
 				</strong>
 			</div>
-			<nav class="main_nav">
+				
+			<nav class="nav">
+
+			<ul>
 				<li><a href="index.html" class="active">ГЛАВНАЯ</a></li>
 				<li><a href="#about">О ПРЕДПРИЯТИИ</a</li>
 				<li><a href="#uslugi">УСЛУГИ</a></li>
-				<li><a href="cost.html">СТОИМОСТЬ</a></li>
-				<li><a href="gallary.html">ФОТОГАЛЕРЕЯ</a></li>
+				<li><a href="#price">СТОИМОСТЬ</a></li>
+				<li><a href="#gallary">ФОТОГАЛЕРЕЯ</a></li>
 				<li><a href="#contacts">КОНТАКТЫ</a></li>
+			</ul>
+			<div class="gamburger" for="hmt">
+ 				<span class="first"></span>
+  				<span class="second"></span>
+  				<span class="third"></span>
+			</div>
 			</nav>
 		</div>
 	</header>
@@ -126,30 +149,282 @@
 			 		</div>
 		  </div>
         </section>
+        <section class="price" id="price">
+        	<header class="wow slideInLeft  animated"><h3>Стоимость:</h3></header>
+        		
+			<table id="pris">
+			<caption>Выписка из Прайс-лист</caption>
+			<thead>
+				<tr>
+					<td class="left_col">Наименование</td>
+					<td class="right_col">Цена с учётом запчастей и работы, грн</td>
+				</tr>
+				<tr>
+					<td class="left_col">1</td>
+					<td class="right_col">2</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td >
+						<h2>Ряднык топливные насосы высокого давления (ЕВРО-1)</h2>
+						<p>производства: BOSCH, Lucas, DELPHI, Motorpal, Kiki, DENSO, Yanmar, ZEXEL, Doowon, ЯЗТА, ЧЕТРА, Stanadyne, Cummins и заводов топливной аппаратуры КНР с числом секций от 2-ч до 12.</p>
+						<p>в том числе:</p>
+					</td>
+					<td class="right_col"><p>4500...8500</p></td>
+				</tr>
+				<tr>
+					<td >
+						<p>-рядная шестёрка (Евро-1)</p>
+					</td>
+					<td class="right_col">
+					<p>6000</p>
+					</td>
+				</tr>
+				<tr>
+					<td >
+						<p>-рядная шетсёрка (Евро-2)</p>
+					</td>
+					<td class="right_col">
+					<p>7000</p>
+					</td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td>
+						<h2>Распределительные топливные насосы высокого давления</h2>
+						<p>производства: BOSCH, Lucas, DELPHI, DENSO, Yanmar, ZEXEL, Doowon, Stanadyne с числом секций от 3-х до 6.</p>
+					</td>
+					<td class="right_col"><p>3500...6000</p></td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td>
+						<h2>Распределительные топливные насосы BOSCH</h2>
+						<p>VP29/30; VP44</p>
+					</td>
+					<td class="right_col"><p>5500...12 500</p></td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td>
+						<h2>Насосная секция </h2>
+						<p>MB Actros 18.40</p>
+						<p>MB Axor 18.40 LS</p>
+						<p>MB Atego 15.23 и др.</p>
+						<p>Автобус ЛАЗ(двиг. MB)</p>
+						<p>DAF 95.430 XF</p>
+						<p>DAF 95.480 XF</p>
+						<p>RENAULT MAGNUM 400</p>
+						<p>RENAULT MAGNUM 440</p>
+						<p>RENAULT MAGNUM 480</p>
+						<p>Комбайн MEDION 310</p>
+						<p>Комбайн ROPA и др.</p>
+					</td>
+					<td class="right_col"><p>1500</p></td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td colspan="2"><h2>Насос-Форсунка</h2></td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td>
+						<h2>ЕВРО-2</h2>
+						<p>Volvo FH12 420 (380)</p>
+						<p>IVECO Eurostar 440E43</p>
+						<p>IVECO Eurotech</p>
+						<p>IVECO Magirus</p>
+						<p>Scania R114 и др.</p>
+					</td>
+					<td class="right_col"><p>2300</p></td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td><h2>Евро-3</h2></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<p>Volvo FH12 (DELPHI)</p>
+					</td>
+					<td class="right_col"><p>2850</p></td>
+				</tr>
+				<tr>
+					<td>
+						<p>SCANIA R123 C 470 (насос - форсунки Cummins)</p>
+						<p>SCANIA R124 L 420 HPi (насос - форснки Cummins)</p>
+					</td>
+					<td class="right_col"><p>2950</p></td>
+				</tr>
+				<tr>
+					<td><h2>Евро-4</h2></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<p>Volvo FM9 280</p>
+						<p>RENAULT Premium 440 Dxi (двиг. Volvo Dxi 11440)</p>
+					</td>
+					<td class="right_col"><p>3350</p></td>
+				</tr>
+				<tr>
+					<td>
+						<p>Трактор John Deere 9400 (насос - форсунки DELPHI)</p>
+					</td>
+					<td class="right_col"><p>2300</p></td>
+				</tr>
+				<tr>
+					<td>
+						<p>Трактор John Deere 9320</p>
+					</td>
+					<td class="right_col"><p>2300</p></td>
+				</tr>
+				<tr>
+					<td>
+						<p>Трактор John Deere 9530 (2007 г. в.)</p>
+					</td>
+					<td class="right_col"><p>2850</p></td>
+				</tr>
+				<tr>
+					<td>
+						<p>International 9200(двигатель Cummins объём 15 л)</p>
+					</td>
+					<td class="right_col"><p>3500</p></td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td colspan="2"><h2>Система Common Rail</h2></td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td><h5>Форсунка Common Rail</h5></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<p>MAN TGA 18.430 и др.</p>
+						<p>REMAULT Premium 420 DCI</p>
+						<p>IVECO ML80E и др.</p>
+						<p>IVECO Eurocargo 80E17  и др.</p>
+						<p>DAF CF 65.180 и др.</p>
+						<p>DAF LF 45.170 и др.</p>
+						<p>Камаз 6520 (двиг. Cummins) и др.</p>
+						<p>Газель 2705 (двиг. Cummins), Валдай и др.</p>
+						<p>Самосвал HOWO (КНР) (ЕВРО-3)</p>
+						<p>Тягач SHAANXI (КНР) и др.</p>
+						<p>Также все электромагнитные форсунки CR легковых автомобилей и микроавтобусов (корме пьезоэлектрических) BOSCH, DELPHI, DENSO.</p>
+						<p>Трактор CASE 310</p>
+						<p>Трактор FENDT 936</p>
+						<p>Трактор New Holland</p>
+						<p>Трактора IVECO, FORD CARGO</p>
+						<p>Трактор Massey Ferguson 8480</p>
+					</td>
+					<td class="right_col"><p>1000...2000</p></td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td><h5>ТНВД Common Rail:</h5></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<p>MAN TGA 18.430 и др.</p>
+						<p>RENAULT Premium 420 DCI</p>
+						<p>IVECO ML80E и др.</p>
+						<p>IVECO Eurocargo 80E17 и др.</p>
+						<p>DAF CF ML80E и др.</p>
+						<p>DAF LF 45.170 и др.</p>
+					</td>
+					<td class="right_col"><p>4500..7500</p></td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td>
+						<p>Камаз 6520 (двиг. Cummins) и др.</p>
+						<p>Газель 2705 (двиг. Cumins), Валдай и др.</p>
+					</td>
+					<td class="right_col"><p>3500...5500</p></td>
+				</tr>
+				<tr>
+					<td>
+						<p>Самлсвал HOWO (КНР) (ЕВРО-3)</p>
+						<p>Тягач SHAANXI (КНД) и др.</p>
+						<p>Трактор John Deere 8420</p>
+						<p>Трактор John Deere 8530</p>
+						<p>Комбайн John Deere 9680</p>
+						<p>Трактор CASE 310</p>
+						<p>Трактор FENDT 936 (двиг. DEUTS)</p>
+						<p>Трактор New Holland (двиг. Cummins)</p>
+						<p>Трактора IVECO, FORD CARGO (двиг. Cummins)</p>
+						<p>Трактор Massey Ferguson 8480</p>
+					</td>
+					<td class="right_col"><p>4500...10 000</p></td>
+				</tr>
+			</tbody>
+		</table>
+
+        </section>
+        <section class="gallary" id="gallary">
+        	<header class="wow slideInRight animated"><h3>ГАЛЕРЕЯ:</h3></header>
+        	<div class="slider_container">
+						<div class="next_button">></div>
+						<div class="prev_button"><</i></div>
+						<div class="carousel">
+							<div class="slide_item"> <a href="img/gal1.jpg" class="fancybox" data-fancybox-group="group"><img src="img/gal1.jpg" alt="slide_item" /></a></div>
+							<div class="slide_item"> <a href="img/gal2.jpg" class="fancybox" data-fancybox-group="group"><img src="img/gal2.jpg" alt="slide_item"/></a></div>
+							<div class="slide_item"> <a href="img/gal3.jpg" class="fancybox" data-fancybox-group="group"><img src="img/gal3.jpg" alt="slide_item"/></a></div>
+							<div class="slide_item"> <a href="img/gal4.jpg" class="fancybox" data-fancybox-group="group"><img src="img/gal4.jpg" alt="slide_item" /></a></div>
+							<div class="slide_item"> <a href="img/gal5.jpg" class="fancybox" data-fancybox-group="group"><img src="img/gal5.jpg" alt="slide_item" /></a></div>
+							<div class="slide_item"> <a href="img/gal6.jpg" class="fancybox" data-fancybox-group="group"><img src="img/gal6.jpg" alt="slide_item" /></a></div>
+							
+						</div>
+					</div>
+        </section>
         <section class="contacts" id="contacts">
         	<header><h3>КОНТАКТЫ:</h3></header>
         	<div class="col6">
         		<h4>Оставить заявку</h4>
         		<form action="">
-        			<p class="wow fadeInUpBig" data-wow-delay="0.3s"><input id="name" name="name" type="text" placeholder="Ваше имя"></p>
+        			<p class="wow fadeInUpBig" data-wow-delay="0.3s"><input id="name" name="name" type="text" placeholder="ФИО:"></p>
 					
 
 					
-					<p class="wow fadeInUpBig" data-wow-delay="0.6s"><input id="name" name ="telephone" type="tel" placeholder="Номер телефона" requared size="50" pattern="([0-9]{1}(-[0-9]{3})(-[0-9]{3}))"></p>
+					<p class="wow fadeInUpBig" data-wow-delay="0.6s"><input id="name" name ="telephone" type="tel" placeholder="тел:123-12-12-123" requared size="50" pattern="([0-9]{3}(-[0-9]{2})(-[0-9]{2})(-[0-9]{3}))"></p>
 					
 
 					
-					<p class="wow fadeInUpBig" data-wow-delay="0.9s"><input id="email" name="email" type="email" placeholder="Ваш email " recuered size="50"></p>
+					<p class="wow fadeInUpBig" data-wow-delay="0.9s"><input id="email" name="email" type="email" placeholder="Ваш email:" recuered size="50"></p>
 		
 
 					<p class="wow fadeInUpBig" data-wow-delay="1.2s"><textarea name="comment" recuered placeholder="Текст сообщения"></textarea></p>
+
+					<p class="wow fadeInUpBig" data-wow-delay="1.5s"><input type="submit" value="ОТПРАВИТЬ" id="submit" id="go"/></p>
         		</form>
         	</div>
-        	<div class="col6"></div>
+        	<div class="col6 addres">
+        		<h4>Мы находимся:</h4>
+        		<p>Украина, Харьковская обл., г. Чугуев, ул. Харьковская, 41</p>
+				<p>+38(095)<mark> 443-78-04</mark></p>
+				<p>+38(05746)<mark> 4-17-94</mark></p>
+				<p>+38(05746)<mark> 2-21-02</mark></p>
+				<a href="#" alt="email">dizel@kharkov.ukrtel.net</a>
+			</div>
+        	</div>
         </section>
 	</content>
 	<footer>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2572.763691990121!2d36.671552615193335!3d49.846897538550216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412714366eb969ff%3A0xc9210c7f525583d!2zRGllemVsLCDRg9C7LiDQpdCw0YDRjNC60L7QstGB0LrQsNGPLCA0MSwg0KfRg9Cz0YPRl9CyLCDQpdCw0YDQutGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNjM1MDA!5e0!3m2!1sru!2sua!4v1448889066067" width="100%" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2572.763691990121!2d36.671552615193335!3d49.846897538550216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412714366eb969ff%3A0xc9210c7f525583d!2zRGllemVsLCDRg9C7LiDQpdCw0YDRjNC60L7QstGB0LrQsNGPLCA0MSwg0KfRg9Cz0YPRl9CyLCDQpdCw0YDQutGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNjM1MDA!5e0!3m2!1sru!2sua!4v1448889066067" width="100%" height="550" frameborder="0" style="border:0" allowfullscreen ></iframe>
 		</footer>
 </body>
 </html>
