@@ -397,6 +397,7 @@ thead{
 	text-align: center;
 }
 td{
+	padding: 5px;
 	border-left:1px solid black;
 }
 thead>tr>td{
